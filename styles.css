@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -21,7 +25,7 @@ body {
 
 #typewriter {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -60px);
   font-size: 3rem;
@@ -91,4 +95,15 @@ footer ul li a {
 footer ul li a:hover {
   background-color: #fff;
   color: #333;
+}
+
+/* Media query para tablet */
+@media only screen and (min-width: 768px) {
+}
+
+/* Media query para escritorio */
+@media only screen and (min-width: 1200px) {
+  #typewriter {
+    top: 50%;
+  }
 }
